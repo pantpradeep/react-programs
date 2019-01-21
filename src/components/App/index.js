@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import Newintro from '../Intro'
+import Header from '../header'
+import Footer from '../footer'
 import './App.css'; 
 
 /*const Intro = (props) => (
@@ -14,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+       <Header/>
         <header className="App-header">
           <h2 className="test">Welcome</h2>
           <img src={logo} className="App-logo" alt="logo" />
@@ -31,6 +34,7 @@ class App extends Component {
         </header>
         <Newintro message="test"/>
         the length of series array - {this.state.series.length}
+        <Footer/>
       </div>
     );
   }
