@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../logo.svg';
+import Newintro from '../Intro'
+import './App.css'; 
 
-const Intro = (props) => (
+/*const Intro = (props) => (
   <p className="test">edit and save to reload.{props.name}</p>
 )
-
+*/
 class App extends Component {
+  state = {
+    series: []
+  }
   render() {
     return (
       <div className="App">
@@ -25,7 +29,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Intro name="test"/>
+        <Newintro message="test"/>
+        the length of series array - {this.state.series.length}
       </div>
     );
   }
